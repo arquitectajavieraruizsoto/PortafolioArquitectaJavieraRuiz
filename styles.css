@@ -48,7 +48,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .art-caption { position: absolute; left: 22px; top: 22px; font-size: .6rem; letter-spacing: .16em; writing-mode: vertical-rl; }
 .hero-footer { position: absolute; bottom: 28px; left: 0; right: 0; display: flex; justify-content: space-between; font-size: .64rem; letter-spacing: .15em; color: var(--muted); }
 .projects-section { padding-top: 100px; padding-bottom: 120px; }
-.section-heading { display: flex; align-items: end; justify-content: flex-start; gap: clamp(24px, 4vw, 48px); margin-bottom: 42px; }
+.section-heading { display: flex; align-items: end; justify-content: flex-start; gap: 16px; margin-bottom: 42px; }
 .section-heading h2, .about-content h2, .contact-layout h2 { font-size: clamp(2.5rem, 4.5vw, 4.2rem); margin-bottom: 0; }
 .section-heading > p { max-width: 300px; color: var(--muted); font-size: .9rem; margin-bottom: 5px; }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -109,7 +109,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
   .hero { min-height: auto; padding-top: 75px; padding-bottom: 80px; grid-template-columns: 1fr; gap: 45px; }
   .hero-art { height: min(430px, 75vw); }
   .hero-footer { bottom: 25px; }
-  .section-heading { align-items: flex-start; flex-direction: column; }
+  .section-heading { align-items: flex-start; flex-direction: column; gap: 24px; }
   .project-grid { grid-template-columns: 1fr; gap: 42px; }
   .project-visual { height: 360px; }
   .innovation-inner { grid-template-columns: 1fr; padding-block: 75px 90px; gap: 35px; }
