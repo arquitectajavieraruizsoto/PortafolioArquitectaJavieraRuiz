@@ -92,13 +92,15 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .about-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; max-width: 790px; margin-bottom: 27px; }
 .about-columns p { font-size: .93rem; color: var(--muted); }
 .about-skills { margin-top: 42px; }
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; list-style: none; padding: 0; margin: 0; }
-.skills-grid li { display: flex; align-items: center; gap: 12px; min-width: 0; padding: 13px 15px; background: #eeebe3; }
-.skill-icon { position: relative; isolation: isolate; display: grid; place-items: center; width: 32px; height: 32px; flex: none; border-radius: 9px; background: #e8e4d9; font-size: 1.1rem; line-height: 1; text-align: center; }
-.skill-icon::after { content: ""; position: absolute; z-index: -1; right: -2px; bottom: -1px; width: 6px; height: 6px; border: 1px solid var(--paper); border-radius: 50%; background: #b6a77f; box-shadow: -7px -1px 0 #73785b, -3px -7px 0 #c6bca7; }
-.skill-name { font-size: .82rem; font-weight: 600; }
-.skill-level { margin-left: auto; padding: 4px 8px; border-radius: 999px; color: #5c6248; background: #e1e4d8; font-size: .62rem; font-weight: 700; white-space: nowrap; }
-.skill-level-intermediate { color: #81643f; background: #ece2d2; }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); column-gap: 40px; list-style: none; padding: 0; margin: 0; }
+.skills-grid li { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; padding: 14px 0; border-top: 1px solid var(--line); }
+.skill-name { font-size: .9rem; font-weight: 500; }
+.skill-level { display: flex; align-items: center; gap: 8px; color: var(--olive); font-size: .62rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.skill-meter { display: inline-flex; gap: 3px; }
+.skill-meter i { width: 5px; height: 5px; border-radius: 50%; background: var(--line); }
+.skill-level-advanced .skill-meter i { background: var(--olive); }
+.skill-level-intermediate { color: #81643f; }
+.skill-level-intermediate .skill-meter i:nth-child(-n+2) { background: #b6a77f; }
 .contact-section { border-top: 1px solid var(--line); padding-block: 85px 105px; }
 .contact-layout { display: grid; grid-template-columns: 1fr .7fr; gap: 8%; align-items: end; }
 .contact-details > p { max-width: 350px; color: var(--muted); font-size: .92rem; }
