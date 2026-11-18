@@ -163,6 +163,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 }
 @media (max-width: 600px) {
   .skills-grid { grid-template-columns: 1fr; }
+  .project-arrow { font-size: 1rem; }
 }
 @media (max-width: 460px) {
   .section-wrap { width: 88vw; }
