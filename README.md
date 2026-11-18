@@ -3,20 +3,23 @@
 Sitio web estático hecho con HTML, CSS y JavaScript, preparado para publicarse con GitHub Pages.
 
 ## Archivos
-- `index.html`: contenido y estructura del sitio.
+- `index.html`: contenido principal y enlaces a los proyectos.
+- `proyecto-arquitectonico.html`: ficha editable del proyecto arquitectónico.
+- `proyecto-espacios-interiores.html`: ficha editable de espacios interiores.
+- `proyecto-modelado-render.html`: ficha editable de modelado y render.
 - `styles.css`: diseño visual y adaptación a móviles.
 - `script.js`: menú móvil y año automático.
 - `README.md`: estas instrucciones.
 
 ## Antes de publicar
-1. Abre `index.html` y reemplaza `TU-CORREO@EJEMPLO.COM` por tu correo real (aparece en dos lugares).
-2. Cambia los textos de ejemplo de las tarjetas por información de tus proyectos.
-3. Para añadir imágenes reales, coloca las imágenes en una carpeta llamada `images` y actualiza cada tarjeta en `index.html`.
+1. Para actualizar el correo, edita el enlace de contacto en `index.html`.
+2. Edita cada ficha de proyecto en su archivo HTML correspondiente; reemplaza los textos y la ilustración provisional con la información e imágenes reales.
+3. Para añadir imágenes, guárdalas en una carpeta llamada `images` y actualiza la ficha del proyecto correspondiente.
 
 ## Subir los archivos a GitHub
 1. Entra a tu repositorio `PortafolioArquitectaJavieraRuiz`.
 2. Pulsa **Add file → Upload files**.
-3. Descomprime este ZIP en tu computador y arrastra los archivos `index.html`, `styles.css`, `script.js` y `README.md` (no la carpeta contenedora).
+3. Descomprime este ZIP en tu computador y arrastra los archivos del sitio, incluidas las tres fichas HTML, `styles.css`, `script.js` y `README.md` (no la carpeta contenedora).
 4. Pulsa **Commit changes**.
 
 ## Activar GitHub Pages
