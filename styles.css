@@ -138,7 +138,9 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .back-top { white-space: nowrap; }
 @media (max-width: 800px) {
   .site-header { height: 72px; padding-inline: 7vw; }
-  .menu-toggle { display: block; border: 1px solid var(--line); background: transparent; padding: 7px 12px; border-radius: 30px; font-size: .8rem; }
+  .menu-toggle { display: block; border: 1px solid var(--olive); background: var(--paper-dark); color: var(--olive-dark); padding: 7px 12px; border-radius: 30px; font-size: .8rem; cursor: pointer; transition: background .2s ease, color .2s ease; }
+  .menu-toggle:hover, .menu-toggle[aria-expanded="true"] { background: var(--olive-dark); color: var(--paper); border-color: var(--olive-dark); }
+  .menu-toggle:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; }
   .main-nav { display: none; position: absolute; top: 71px; left: 0; right: 0; padding: 22px 7vw 28px; background: var(--paper); border-bottom: 1px solid var(--line); flex-direction: column; align-items: flex-start; gap: 17px; }
   .main-nav.is-open { display: flex; }
   .hero { min-height: auto; padding-top: 75px; padding-bottom: 80px; grid-template-columns: 1fr; gap: 45px; }
