@@ -86,7 +86,8 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .material-stamp { position: absolute; right: 14px; bottom: 14px; border: 1px solid rgba(255,255,255,.7); padding: 12px; font-size: .61rem; letter-spacing: .15em; line-height: 1.8; }
 .innovation-tag { position: absolute; bottom: 24px; left: 0; font-size: .6rem; letter-spacing: .16em; color: #c2c8a9; }
 .about-section { padding-block: 130px; display: grid; grid-template-columns: .25fr 1fr; gap: 6%; }
-.about-number { font-family: var(--serif); font-size: 4rem; color: #b7b5a5; line-height: 1; }
+.about-portrait { width: 100%; max-width: 240px; aspect-ratio: 4 / 5; align-self: start; display: grid; place-items: center; overflow: hidden; background: #e9e5db; border: 1px solid var(--line); }
+.about-portrait svg { width: 84%; height: 84%; stroke: var(--olive); stroke-width: 1.5; stroke-linecap: square; stroke-linejoin: miter; }
 .about-content h2 { margin-bottom: 38px; }
 .about-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; max-width: 790px; margin-bottom: 27px; }
 .about-columns p { font-size: .93rem; color: var(--muted); }
@@ -116,7 +117,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
   .material-art { height: 320px; }
   .innovation-tag { bottom: 22px; }
   .about-section { grid-template-columns: 1fr; gap: 20px; padding-block: 90px; }
-  .about-number { font-size: 2.6rem; }
+  .about-portrait { max-width: 220px; }
   .about-columns { grid-template-columns: 1fr; gap: 8px; }
   .contact-layout { grid-template-columns: 1fr; gap: 35px; }
   .site-footer { flex-wrap: wrap; }
