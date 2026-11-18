@@ -126,3 +126,32 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
   .project-visual { height: 290px; }
   .site-footer { align-items: flex-start; flex-direction: column; gap: 10px; }
 }
+/* Estilos para la sección Servicios: pegar al final de styles.css */
+.services-section{padding-top:110px;padding-bottom:115px}
+.services-intro{display:flex;align-items:center;gap:28px;padding:22px 0 35px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:65px}
+.services-intro-mark{font-family:"Manrope",sans-serif;font-size:1.45rem;font-weight:800;letter-spacing:-.08em;color:var(--olive)}
+.services-intro p{max-width:650px;color:var(--muted);font-size:.9rem;margin:0}
+.service-category{padding-block:34px 50px;border-bottom:1px solid var(--line)}
+.service-category-heading{display:grid;grid-template-columns:55px 1fr .7fr;gap:22px;align-items:start;margin-bottom:28px}
+.service-index{font-family:var(--serif);font-size:2.1rem;line-height:1;color:#aaa995}
+.service-category-heading .project-type{margin:0 0 7px}
+.service-category-heading h3{font-family:"Manrope",sans-serif;font-size:clamp(1.35rem,2.2vw,1.9rem);font-weight:500;letter-spacing:-.045em;margin:0}
+.category-summary{color:var(--muted);font-size:.83rem;max-width:340px;margin:4px 0 0}
+.service-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-left:77px}
+.service-cards-two{grid-template-columns:repeat(2,1fr)}
+.service-card{background:#eeebe3;padding:24px 23px 25px;min-height:100%}
+.service-card-featured{background:#e5e2d7}
+.service-card-number{font-size:.62rem;letter-spacing:.14em;color:var(--olive)}
+.service-card h4{font-family:"Manrope",sans-serif;font-size:1.13rem;font-weight:600;line-height:1.25;letter-spacing:-.035em;margin:17px 0 12px}
+.service-card p{color:var(--muted);font-size:.8rem;line-height:1.65;margin-bottom:15px}
+.service-card ul{list-style:none;padding:14px 0 0;margin:0;border-top:1px solid var(--line)}
+.service-card li{color:var(--ink);font-size:.74rem;line-height:1.5;padding:5px 0 5px 14px;position:relative}
+.service-card li:before{content:"—";position:absolute;left:0;color:var(--olive)}
+.services-note{margin:55px 0 20px 77px;padding:28px 30px;background:var(--olive-dark);color:var(--paper);display:flex;justify-content:space-between;align-items:center;gap:25px}
+.services-note p{font-size:.9rem;color:#e0e1d8;margin:0}
+.services-note strong{color:white}
+.services-note .button{white-space:nowrap}
+.services-disclaimer{margin:18px 0 0 77px;max-width:850px;color:var(--muted);font-size:.7rem}
+@media(max-width:800px){.services-section{padding-top:80px;padding-bottom:85px}.services-intro{align-items:flex-start}.service-category-heading{grid-template-columns:42px 1fr;gap:12px}.category-summary{grid-column:2;max-width:560px}.service-cards,.service-cards-two{grid-template-columns:1fr 1fr;margin-left:54px}.services-note,.services-disclaimer{margin-left:54px}.services-note{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.service-cards,.service-cards-two{grid-template-columns:1fr;margin-left:0}.service-category-heading{grid-template-columns:34px 1fr}.service-index{font-size:1.65rem}.services-note,.services-disclaimer{margin-left:0}.services-note{padding:24px 20px}.services-intro{gap:17px}}
+
