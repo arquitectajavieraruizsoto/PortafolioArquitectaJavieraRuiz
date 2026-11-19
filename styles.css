@@ -218,6 +218,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 @media(max-width:800px){.services-section{padding-top:35px;padding-bottom:85px}.service-category-heading{grid-template-columns:42px 1fr;gap:12px}.category-summary{grid-column:2;max-width:560px}.service-cards,.service-cards-two{grid-template-columns:1fr 1fr}.image-grid.four,.image-grid.three{grid-template-columns:repeat(2,1fr);height:auto}.image-grid.two{height:auto}.image-grid img{min-height:150px;aspect-ratio:1.35}}
 @media(max-width:520px){.service-cards,.service-cards-two{grid-template-columns:1fr}.service-category-heading{grid-template-columns:34px 1fr}.service-index{font-size:1.65rem}.image-grid.four,.image-grid.three,.image-grid.two{grid-template-columns:1fr}.image-grid img{aspect-ratio:1.5}}
 #diseno.service-category{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:clamp(28px,5vw,76px);align-items:stretch}
+#diseno.service-category{border-bottom:0}
 #diseno .service-category-heading{grid-column:1 / -1}
 #diseno .design-carousel{grid-column:2;grid-row:2;min-width:0;margin:0 0 2rem}
 #diseno .design-carousel-viewport{width:100%;aspect-ratio:1.5;overflow:hidden;background:#eeebe3;touch-action:pan-y;outline:none}
