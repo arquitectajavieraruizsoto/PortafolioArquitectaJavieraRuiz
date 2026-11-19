@@ -115,12 +115,23 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .eyebrow-light { color: #c2c8a9; }
 .innovation-copy h2 { font-size: clamp(3rem, 5vw, 5rem); margin-bottom: 25px; }
 .innovation-copy > p:not(.eyebrow) { color: #d0d2c7; max-width: 440px; margin-bottom: 30px; }
-.material-art { height: 360px; position: relative; background: #444b3b; overflow: hidden; }
-.material-sheet { position: absolute; width: 60%; height: 68%; top: 15%; left: 20%; transform: rotate(-14deg); box-shadow: 8px 12px 30px rgba(0,0,0,.2); }
-.sheet-one { background: #b6a77f; left: 10%; top: 20%; }
-.sheet-two { background: #d6cdb7; left: 24%; top: 14%; transform: rotate(8deg); }
-.sheet-three { background: #858b6d; left: 34%; top: 23%; transform: rotate(21deg); }
-.material-stamp { position: absolute; right: 14px; bottom: 14px; border: 1px solid rgba(255,255,255,.7); padding: 12px; font-size: .61rem; letter-spacing: .15em; line-height: 1.8; }
+.material-art { height: 360px; position: relative; background: #f5f2eb; overflow: hidden; }
+.material-scene { display: block; width: 100%; height: 100%; }
+.scene-paper { fill: #f5f2eb; }
+.scene-volume { fill: #b8a5a2; opacity: .76; }
+.scene-people { color: #24271f; fill: #24271f; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.scene-head { stroke: none; }
+.scene-person { transform-box: fill-box; transform-origin: center; }
+.scene-person-reach { animation: scene-reach 7s ease-in-out infinite; }
+.scene-person-sit { animation: scene-sit 6s ease-in-out infinite 1s; }
+.scene-person-walk { animation: scene-walk 8s ease-in-out infinite; }
+.scene-person-observe { animation: scene-observe 9s ease-in-out infinite 2s; }
+.scene-caption-rule { fill: none; stroke: #b8a5a2; stroke-width: 3; }
+.scene-caption { fill: #24271f; font-family: "Manrope", sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 3px; text-anchor: middle; }
+@keyframes scene-reach { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+@keyframes scene-sit { 0%,100% { transform: translateY(0); } 50% { transform: translateY(2px); } }
+@keyframes scene-walk { 0%,100% { transform: translate(0,0); } 50% { transform: translate(7px,-2px); } }
+@keyframes scene-observe { 0%,100% { transform: translate(0,0); } 50% { transform: translate(0,-3px); } }
 .innovation-tag { position: absolute; bottom: 24px; left: 0; font-size: .6rem; letter-spacing: .16em; color: #c2c8a9; }
 .about-section { padding-block: 130px 15px; display: grid; grid-template-columns: .25fr 1fr; column-gap: 6%; row-gap: 0; }
 .about-portrait { width: 100%; max-width: 240px; aspect-ratio: 4 / 5; align-self: start; display: grid; place-items: center; overflow: hidden; background: #e9e5db; border: 1px solid var(--line); }
@@ -169,6 +180,8 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
   .project-visual { height: 360px; }
   .innovation-inner { grid-template-columns: 1fr; padding-block: 75px 90px; gap: 35px; }
   .material-art { height: 320px; }
+  .material-scene { overflow: hidden; }
+  .scene-caption { font-size: 15px; letter-spacing: 2px; }
   .innovation-tag { bottom: 22px; }
   .about-section { grid-template-columns: 1fr; gap: 20px; padding-block: 90px 15px; }
   .about-portrait { max-width: 220px; }
@@ -278,6 +291,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 @media(max-width:800px){#diseno.service-category{grid-template-columns:1fr;column-gap:0;align-items:start}#diseno .service-category-heading{grid-column:1;grid-template-columns:42px 1fr;gap:12px}#diseno .category-summary{grid-column:2;max-width:560px}#diseno .design-carousel{grid-column:1;grid-row:3}#diseno .service-cards{grid-column:1;grid-row:2;margin:0;align-content:start}}
 @media(max-width:520px){#diseno .service-category-heading{grid-template-columns:34px 1fr}#diseno .design-carousel-viewport{aspect-ratio:1.5}#diseno .design-carousel-controls{grid-template-columns:36px 1fr 36px;gap:8px}#diseno .design-carousel-button{width:36px;height:36px}}
 @media(prefers-reduced-motion:reduce){#diseno .design-carousel-track,#diseno .design-carousel-slide img,#diseno .design-carousel-caption{transition:none}}
+@media(prefers-reduced-motion:reduce){.scene-person{animation:none}}
 @media(max-width:800px){
  #regularizacion.service-category{grid-template-columns:minmax(0,.35fr) minmax(0,.65fr);column-gap:12px}
  #regularizacion .service-category-heading{grid-column:1 / -1}
