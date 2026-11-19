@@ -257,7 +257,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 @media(max-width:800px){
  #regularizacion.service-category{grid-template-columns:minmax(0,.35fr) minmax(0,.65fr);column-gap:12px}
  #regularizacion .service-category-heading{grid-column:1 / -1}
- #regularizacion .image-grid.regularization-single{grid-column:1;grid-row:2;height:auto;aspect-ratio:auto;margin:0}
+ #regularizacion .image-grid.regularization-single{grid-column:1;grid-row:2;align-self:center;height:auto;aspect-ratio:auto;margin:0}
  #regularizacion .image-grid.regularization-single img.image-contain{width:min(100%,140px);height:auto;max-height:210px;min-height:0;aspect-ratio:auto}
  #regularizacion .service-cards.service-cards-two{grid-column:2;grid-row:2}
  #regularizacion .service-accordion-body{padding-left:53px}
