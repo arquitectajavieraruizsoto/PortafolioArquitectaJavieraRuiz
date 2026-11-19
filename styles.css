@@ -116,10 +116,11 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .eyebrow-light { color: #c2c8a9; }
 .innovation-copy h2 { font-size: clamp(3rem, 5vw, 5rem); margin-bottom: 25px; }
 .innovation-copy > p:not(.eyebrow) { color: #d0d2c7; max-width: 440px; margin-bottom: 30px; }
-.material-art { height: 360px; position: relative; background: #f5f2eb; overflow: hidden; }
+.material-art { height: 360px; position: relative; background: var(--paper-dark); overflow: hidden; }
 .material-scene { display: block; width: 100%; height: 100%; }
-.scene-paper { fill: #f5f2eb; }
-.scene-volume { fill: #b8a5a2; opacity: .76; }
+.scene-paper { fill: var(--paper-dark); }
+.scene-grid-line { fill: none; stroke: var(--olive); stroke-opacity: .2; stroke-width: 1; }
+.scene-volume { fill: var(--olive); opacity: .38; }
 .scene-people { color: #24271f; fill: #24271f; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
 .scene-head { stroke: none; }
 .scene-person { transform-box: fill-box; transform-origin: center; }
@@ -127,7 +128,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .scene-person-sit { animation: scene-sit 6s ease-in-out infinite 1s; }
 .scene-person-walk { animation: scene-walk 8s ease-in-out infinite; }
 .scene-person-observe { animation: scene-observe 9s ease-in-out infinite 2s; }
-.scene-caption-rule { fill: none; stroke: #b8a5a2; stroke-width: 3; }
+.scene-caption-rule { fill: none; stroke: var(--olive); stroke-width: 3; opacity: .72; }
 .scene-caption { fill: #24271f; font-family: "Manrope", sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 3px; text-anchor: middle; }
 @keyframes scene-reach { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
 @keyframes scene-sit { 0%,100% { transform: translateY(0); } 50% { transform: translateY(2px); } }
