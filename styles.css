@@ -124,26 +124,27 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .scene-people { color: #24271f; fill: #24271f; stroke: none; }
 .scene-head { stroke: none; }
 .scene-person { transform-box: fill-box; transform-origin: center; }
-.scene-person-walk { animation: scene-carry-walk 10s ease-in-out infinite; }
+.scene-person-walk { animation: scene-carry-walk 10s ease-in-out forwards; }
 .scene-walk-leg-back,.scene-walk-leg-front { transform-box: fill-box; }
-.scene-walk-leg-back { transform-origin: 100% 0; animation: scene-walk-step 1s ease-in-out infinite alternate; }
-.scene-walk-leg-front { transform-origin: 0 0; animation: scene-walk-step 1s ease-in-out infinite alternate-reverse; }
-.scene-person-observe { animation: scene-observer-approach 10s ease-in-out infinite; }
+.scene-walk-leg-back { transform-origin: 100% 0; animation: scene-walk-step-back 10s linear forwards; }
+.scene-walk-leg-front { transform-origin: 0 0; animation: scene-walk-step-front 10s linear forwards; }
+.scene-person-observe { animation: scene-observer-approach 10s ease-in-out forwards; }
 .scene-observe-leg-back,.scene-observe-leg-front { transform-box: fill-box; }
-.scene-observe-leg-back { transform-origin: 100% 0; animation: scene-observer-step-back 10s linear infinite; }
-.scene-observe-leg-front { transform-origin: 0 0; animation: scene-observer-step-front 10s linear infinite; }
-.scene-target-fill { fill: var(--olive); opacity: 0; animation: scene-target-complete 10s ease-in-out infinite; }
+.scene-observe-leg-back { transform-origin: 100% 0; animation: scene-observer-step-back 10s linear forwards; }
+.scene-observe-leg-front { transform-origin: 0 0; animation: scene-observer-step-front 10s linear forwards; }
+.scene-target-fill { fill: var(--olive); opacity: 0; animation: scene-target-complete 10s ease-in-out forwards; }
 .scene-target-outline { fill: none; stroke: var(--olive); stroke-width: 2; stroke-dasharray: 6 5; opacity: .7; }
-.scene-carried-square { fill: var(--olive); opacity: 0; transform-box: fill-box; transform-origin: center; animation: scene-square-delivery 10s ease-in-out infinite; }
+.scene-carried-square { fill: var(--olive); opacity: 0; transform-box: fill-box; transform-origin: center; animation: scene-square-delivery 10s ease-in-out forwards; }
 .scene-caption-rule { fill: none; stroke: var(--olive); stroke-width: 3; opacity: .72; }
 .scene-caption { fill: #24271f; font-family: "Manrope", sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 3px; text-anchor: middle; }
-@keyframes scene-carry-walk { 0%,8% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 45%,55% { transform: translate(-115px,0); opacity: 1; } 88% { transform: translate(0,0); opacity: 1; } 100% { opacity: 0; } }
-@keyframes scene-walk-step { from { transform: rotate(-16deg); } to { transform: rotate(16deg); } }
-@keyframes scene-observer-approach { 0%,8% { transform: translate(0,0); } 10% { transform: translate(0,0); } 45%,65% { transform: translate(-32px,22px); } 88%,100% { transform: translate(0,0); } }
-@keyframes scene-observer-step-back { 0%,10%,45%,65%,88%,100% { transform: rotate(0); } 17%,31%,72%,86% { transform: rotate(-14deg); } 24%,38%,79% { transform: rotate(14deg); } }
-@keyframes scene-observer-step-front { 0%,10%,45%,65%,88%,100% { transform: rotate(0); } 17%,31%,72%,86% { transform: rotate(14deg); } 24%,38%,79% { transform: rotate(-14deg); } }
+@keyframes scene-carry-walk { 0%,8% { transform: translate(0,0); opacity: 0; } 10% { opacity: 1; } 45%,55%,100% { transform: translate(-115px,0); opacity: 1; } }
+@keyframes scene-walk-step-back { 0%,10%,45%,100% { transform: rotate(0); } 17%,31% { transform: rotate(-14deg); } 24%,38% { transform: rotate(14deg); } }
+@keyframes scene-walk-step-front { 0%,10%,45%,100% { transform: rotate(0); } 17%,31% { transform: rotate(14deg); } 24%,38% { transform: rotate(-14deg); } }
+@keyframes scene-observer-approach { 0%,8%,10% { transform: translate(0,0); } 45%,100% { transform: translate(-32px,22px); } }
+@keyframes scene-observer-step-back { 0%,10%,45%,100% { transform: rotate(0); } 17%,31% { transform: rotate(-14deg); } 24%,38% { transform: rotate(14deg); } }
+@keyframes scene-observer-step-front { 0%,10%,45%,100% { transform: rotate(0); } 17%,31% { transform: rotate(14deg); } 24%,38% { transform: rotate(-14deg); } }
 @keyframes scene-square-delivery { 0%,8% { transform: translate(0,0) scale(1); opacity: 0; } 10% { opacity: 1; } 45% { transform: translate(-115px,0) scale(1); opacity: 1; } 54% { transform: translate(-115px,-23px) scale(2.714); opacity: 1; } 60%,100% { transform: translate(-115px,-23px) scale(2.714); opacity: 0; } }
-@keyframes scene-target-complete { 0%,52% { opacity: 0; } 60%,88% { opacity: .38; } 100% { opacity: 0; } }
+@keyframes scene-target-complete { 0%,52% { opacity: 0; } 60%,100% { opacity: .38; } }
 .innovation-tag { position: absolute; bottom: 24px; left: 0; font-size: .6rem; letter-spacing: .16em; color: #c2c8a9; }
 .about-section { padding-block: 130px 15px; display: grid; grid-template-columns: .25fr 1fr; column-gap: 6%; row-gap: 0; }
 .about-portrait { width: 100%; max-width: 240px; aspect-ratio: 4 / 5; align-self: start; display: grid; place-items: center; overflow: hidden; background: #e9e5db; border: 1px solid var(--line); }
