@@ -121,7 +121,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .scene-paper { fill: var(--paper-dark); }
 .scene-grid-line { fill: none; stroke: var(--olive); stroke-opacity: .2; stroke-width: 1; }
 .scene-volume { fill: var(--olive); opacity: .38; }
-.scene-people { color: #24271f; fill: #24271f; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.scene-people { color: #24271f; fill: #24271f; stroke: none; }
 .scene-head { stroke: none; }
 .scene-person { transform-box: fill-box; transform-origin: center; }
 .scene-person-walk { animation: scene-carry-walk 10s ease-in-out infinite; }
