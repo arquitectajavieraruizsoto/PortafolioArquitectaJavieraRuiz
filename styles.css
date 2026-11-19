@@ -54,7 +54,7 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .project-card:hover .project-arrow, .project-card:focus-visible .project-arrow { transform: translate(3px, -3px); }
 .project-visual { height: 320px; position: relative; overflow: hidden; }
 .project-visual .visual-logo-image { display:block;width:100%;height:100%;object-fit:cover;object-position:center; }
-.visual-label { position: absolute; top: 17px; left: 17px; font-size: .6rem; letter-spacing: .14em; z-index: 2; }
+.visual-label { position: absolute; top: 17px; left: 17px; font-size: .6rem; letter-spacing: .14em; z-index: 2; color:#fff; }
 .visual-architecture { background: #d8d4c8; }
 .arch-shape { position: absolute; width: 57%; height: 72%; left: 23%; bottom: 0; background: #8b9076; border-radius: 100px 100px 0 0; }
 .arch-shape::after { content: ""; position: absolute; width: 34%; height: 63%; bottom: 0; left: 33%; background: #d8d4c8; border-radius: 70px 70px 0 0; }
