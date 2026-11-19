@@ -124,10 +124,10 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .scene-people { color: #24271f; fill: #24271f; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
 .scene-head { stroke: none; }
 .scene-person { transform-box: fill-box; transform-origin: center; }
-.scene-person-walk { animation: scene-walk 7s ease-in-out infinite; }
+.scene-person-walk { animation: scene-walk 6s ease-in-out infinite; }
 .scene-caption-rule { fill: none; stroke: var(--olive); stroke-width: 3; opacity: .72; }
 .scene-caption { fill: #24271f; font-family: "Manrope", sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 3px; text-anchor: middle; }
-@keyframes scene-walk { 0%,100% { transform: translate(0,0); } 50% { transform: translate(12px,-2px); } }
+@keyframes scene-walk { 0%,100% { transform: translate(0,0); } 50% { transform: translate(16px,-2px); } }
 .innovation-tag { position: absolute; bottom: 24px; left: 0; font-size: .6rem; letter-spacing: .16em; color: #c2c8a9; }
 .about-section { padding-block: 130px 15px; display: grid; grid-template-columns: .25fr 1fr; column-gap: 6%; row-gap: 0; }
 .about-portrait { width: 100%; max-width: 240px; aspect-ratio: 4 / 5; align-self: start; display: grid; place-items: center; overflow: hidden; background: #e9e5db; border: 1px solid var(--line); }
@@ -287,7 +287,6 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 @media(max-width:800px){#diseno.service-category{grid-template-columns:1fr;column-gap:0;align-items:start}#diseno .service-category-heading{grid-column:1;grid-template-columns:42px 1fr;gap:12px}#diseno .category-summary{grid-column:2;max-width:560px}#diseno .design-carousel{grid-column:1;grid-row:3}#diseno .service-cards{grid-column:1;grid-row:2;margin:0;align-content:start}}
 @media(max-width:520px){#diseno .service-category-heading{grid-template-columns:34px 1fr}#diseno .design-carousel-viewport{aspect-ratio:1.5}#diseno .design-carousel-controls{grid-template-columns:36px 1fr 36px;gap:8px}#diseno .design-carousel-button{width:36px;height:36px}}
 @media(prefers-reduced-motion:reduce){#diseno .design-carousel-track,#diseno .design-carousel-slide img,#diseno .design-carousel-caption{transition:none}}
-@media(prefers-reduced-motion:reduce){.scene-person{animation:none}}
 @media(max-width:800px){
  #regularizacion.service-category{grid-template-columns:minmax(0,.35fr) minmax(0,.65fr);column-gap:12px}
  #regularizacion .service-category-heading{grid-column:1 / -1}
