@@ -255,11 +255,11 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 @media(max-width:520px){#diseno .service-category-heading{grid-template-columns:34px 1fr}#diseno .design-carousel-viewport{aspect-ratio:1.5}#diseno .design-carousel-controls{grid-template-columns:36px 1fr 36px;gap:8px}#diseno .design-carousel-button{width:36px;height:36px}}
 @media(prefers-reduced-motion:reduce){#diseno .design-carousel-track,#diseno .design-carousel-slide img,#diseno .design-carousel-caption{transition:none}}
 @media(max-width:800px){
- #regularizacion.service-category{grid-template-columns:1fr}
- #regularizacion .service-category-heading{grid-column:1}
- #regularizacion .image-grid.regularization-single{grid-column:1;grid-row:3;height:auto;aspect-ratio:auto;margin:0 0 2rem}
- #regularizacion .image-grid.regularization-single img.image-contain{width:min(100%,140px);height:auto;max-height:210px}
- #regularizacion .service-cards.service-cards-two{grid-column:1;grid-row:2}
+ #regularizacion.service-category{grid-template-columns:minmax(0,.35fr) minmax(0,.65fr);column-gap:12px}
+ #regularizacion .service-category-heading{grid-column:1 / -1}
+ #regularizacion .image-grid.regularization-single{grid-column:1;grid-row:2;height:auto;aspect-ratio:auto;margin:0}
+ #regularizacion .image-grid.regularization-single img.image-contain{width:min(100%,140px);height:auto;max-height:210px;min-height:0;aspect-ratio:auto}
+ #regularizacion .service-cards.service-cards-two{grid-column:2;grid-row:2}
  #regularizacion .service-accordion-body{padding-left:53px}
 }
 
