@@ -124,16 +124,10 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .scene-people { color: #24271f; fill: #24271f; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
 .scene-head { stroke: none; }
 .scene-person { transform-box: fill-box; transform-origin: center; }
-.scene-person-reach { animation: scene-reach 7s ease-in-out infinite; }
-.scene-person-sit { animation: scene-sit 6s ease-in-out infinite 1s; }
-.scene-person-walk { animation: scene-walk 8s ease-in-out infinite; }
-.scene-person-observe { animation: scene-observe 9s ease-in-out infinite 2s; }
+.scene-person-walk { animation: scene-walk 7s ease-in-out infinite; }
 .scene-caption-rule { fill: none; stroke: var(--olive); stroke-width: 3; opacity: .72; }
 .scene-caption { fill: #24271f; font-family: "Manrope", sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 3px; text-anchor: middle; }
-@keyframes scene-reach { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
-@keyframes scene-sit { 0%,100% { transform: translateY(0); } 50% { transform: translateY(2px); } }
-@keyframes scene-walk { 0%,100% { transform: translate(0,0); } 50% { transform: translate(7px,-2px); } }
-@keyframes scene-observe { 0%,100% { transform: translate(0,0); } 50% { transform: translate(0,-3px); } }
+@keyframes scene-walk { 0%,100% { transform: translate(0,0); } 50% { transform: translate(12px,-2px); } }
 .innovation-tag { position: absolute; bottom: 24px; left: 0; font-size: .6rem; letter-spacing: .16em; color: #c2c8a9; }
 .about-section { padding-block: 130px 15px; display: grid; grid-template-columns: .25fr 1fr; column-gap: 6%; row-gap: 0; }
 .about-portrait { width: 100%; max-width: 240px; aspect-ratio: 4 / 5; align-self: start; display: grid; place-items: center; overflow: hidden; background: #e9e5db; border: 1px solid var(--line); }
