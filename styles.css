@@ -55,6 +55,18 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
 .project-card { display: block; min-width: 0; }
 .project-card:focus-visible { outline: 1px solid var(--olive); outline-offset: 6px; }
 .project-card:hover .project-arrow, .project-card:focus-visible .project-arrow { transform: translate(3px, -3px); }
+.portfolio-index-section { padding-block:76px 88px;border-bottom:1px solid var(--line) }
+.portfolio-index-title { margin:0 0 42px;padding-left:.32em;text-align:center;font-family:"Manrope",sans-serif;font-size:clamp(2rem,6vw,5rem);font-weight:500;line-height:1;letter-spacing:.32em }
+.portfolio-index-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,4vw,48px) }
+.portfolio-index-item { display:flex;flex-direction:column;align-items:center;min-width:0;text-align:center }
+.portfolio-index-image { width:min(100%,190px);aspect-ratio:.67;overflow:hidden;background:var(--paper-dark) }
+.portfolio-index-image img { display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.82) sepia(.06);transition:transform .35s ease }
+.portfolio-index-item:hover .portfolio-index-image img,.portfolio-index-item:focus-visible .portfolio-index-image img { transform:scale(1.04) }
+.portfolio-index-item:focus-visible { outline:1px solid var(--olive);outline-offset:5px }
+.portfolio-index-number { margin:15px 0 8px;font-family:"Manrope",sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:500;line-height:1;letter-spacing:-.05em }
+.portfolio-index-item h3 { max-width:230px;margin:0;font-family:"Manrope",sans-serif;font-size:.76rem;font-weight:600;line-height:1.35;letter-spacing:.07em;text-transform:uppercase }
+.portfolio-index-type { margin:8px 0 18px;color:var(--muted);font-size:.6rem;letter-spacing:.12em }
+.portfolio-index-action { display:flex;justify-content:space-between;align-items:center;width:min(100%,190px);border-top:1px solid var(--olive);padding-top:7px;color:var(--olive-dark);font-size:.58rem;letter-spacing:.1em }
 .project-visual { height: 320px; position: relative; overflow: hidden; }
 .project-visual .visual-logo-image { display:block;width:100%;height:100%;object-fit:cover;object-position:center; }
 .visual-label { position: absolute; top: 17px; left: 17px; font-size: .6rem; letter-spacing: .14em; z-index: 2; color:#fff; }
@@ -151,6 +163,9 @@ h1 em, h2 em { font-family: var(--serif); font-weight: 400; }
   .section-heading { align-items: flex-start; flex-direction: column; }
   .projects-section { padding-top: 20px; }
   .project-grid { grid-template-columns: 1fr; gap: 42px; }
+  .portfolio-index-section { padding-block:58px 70px; }
+  .portfolio-index-title { margin-bottom:30px;letter-spacing:.18em; }
+  .portfolio-index-grid { gap:16px; }
   .project-visual { height: 360px; }
   .innovation-inner { grid-template-columns: 1fr; padding-block: 75px 90px; gap: 35px; }
   .material-art { height: 320px; }
